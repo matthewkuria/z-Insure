@@ -48,26 +48,38 @@
     
 
     <!--Hero Section-->
-    <section class="hero">
+    <section class="hero relative z-0">
       <div>
-        <img src="/images/image-intro-mobile.jpg" alt="" class="w-full">
+        <img src="/images/image-intro-mobile.jpg" alt="" class="w-full md:hidden">
+      </div>
+      <!-- Desktop image -->
+      <div>
+        <img src="/images/image-intro-desktop.jpg" alt="" class="hidden absolute md:block right-4 mr-28 top-44 z-50 h-auto w-1/3">
+      </div>
+      <!-- pattern on the desktop -->
+      <div class="">
+        <img src="/images/bg-pattern-intro-right-desktop.svg" alt="" class=" hidden md:block absolute top-0  right-0 z-50 w-80 h-4/5">
       </div>
       <!-- a div to contain the heading and paragraph elements -->
-         <div class="hero-stats relative py-20 px-5 bg-purple">
+         <div class="hero-stats relative py-20 px-5 bg-purple z-0 ">
           <!-- the pattern image left -->
-          <img src="/images/bg-pattern-intro-left-mobile.svg" alt="" class="absolute top-0 left-0">
-          <h1 class="text-white  font-bold text-5xl text-center"> Humanizing your insurance.</h1>
-          <p class="text-white text-center mt-5 mb-10">Get your life insurance coverage easier and faster. We blend our
+          <img src="/images/bg-pattern-intro-left-mobile.svg" alt="" class="absolute md:hidden top-0 left-0">
+          <!-- Left desktop pattern between the hero section and We are Different section -->
+          <div class="">
+            <img src="/images/bg-pattern-intro-left-desktop.svg" alt="" class="absolute hidden md:block left-0 -bottom-40 w-20">
+          </div>
+          <h1 class="text-white  font-bold text-5xl text-center md:w-1/3 md:ml-20 md:text-left"> Humanizing your insurance.</h1>
+          <p class="text-white text-center mt-5 mb-10 md:w-1/2 md:ml-20 md:text-left">Get your life insurance coverage easier and faster. We blend our
             expertise and technology to help you find the plan that’s right for
             you. Ensure you and your loved ones are protected.</p>
             <!-- Create a  div to center the button -->
-            <div class="text-center">
-              <button class="p-3 px-6 mb-10 text-white uppercase border-2 border-[#ffffff] hover:bg-darkPurple hover:text-white">
+            <div class="text-center md:text-left md:ml-20">
+              <button class="p-3 px-6 mb-10 text-white uppercase border-2 border-[#ffffff] hover:bg-darkPurple hover:text-white md:hover:bg-white md:hover:text-black">
                 View Plans
               </button>
             </div>
-            <!-- the pattern image righton the hero -->
-            <img src="/images/bg-pattern-intro-right-mobile.svg" alt="" class="absolute right-0 -bottom-50">
+            <!-- the pattern image right on the hero -->
+            <img src="/images/bg-pattern-intro-right-mobile.svg" alt="" class=" md:hidden z-50 absolute right-0 -bottom-50">
          </div>
       
     </section>
@@ -99,15 +111,17 @@
    
     </section>
 
-    <!--More-->
-    <section class="py-20 mx-5 lg:hidden">
+    <!--More SECTION for mobile-->
+    <section class="py-20 mx-5  lg:hidden">
       <div
         class="MORE--SECTION relative mx-auto bg-purple text-center md:justify-between flex mt-8 p-20 flex-col md:flex-row"
       >
-      <!-- the pattern image righton the hero -->
-      <img src="/images/bg-pattern-how-we-work-mobile.svg" alt="" class="absolute right-0 top-0">
+      <!-- the pattern image right on the more section -->
+      <div class="">
+        <img src="/images/bg-pattern-how-we-work-mobile.svg" alt="" class="  absolute md:w-full right-0 top-0 bottom-0">
+      </div>
         <h2
-          class="text-white pb-5 mb-5 ont-serif text-4xl font-bold px-10 "
+          class="text-white pb-5 mb-5 font-serif text-4xl font-bold px-10 "
         >
           Find out more about how we work
         </h2>
@@ -119,17 +133,18 @@
         
       </div>
     </section>
-    <!-- section for the desktop -->
-    <section class="container mx-auto py-20  hidden lg:block">
+    <!-- MORE -- section for the desktop -->
+    <section class="container mx-auto py-10  hidden lg:block ">
      <div class="MORE--SECTION relative  bg-purple text-center md:justify-between flex mt-8 p-20 flex-col md:flex-row">
-      <img src="/images/bg-pattern-how-we-work-desktop.svg" alt="" class="absolute right-0 top-0">
+      <!-- the pattern image right on the more section -->
+      <img src="/images/bg-pattern-how-we-work-desktop.svg" alt="" class="absolute h-80 right-0 top-0">
       <div class=" px-10 flex items-center justify-between">
         <h2
           class="text-white pb-5 mb-5 ont-serif text-4xl font-bold px-10 w-1/2 "
         >
           Find out more about how we work
         </h2>      
-      <button class="p-2 px-3 mb-10 text-white uppercase border-2 border-[#ffffff] hover:bg-darkPurple hover:text-white">
+      <button class=" z-50 p-2 px-3 mb-10 text-white uppercase border-2 border-[#ffffff] hover:bg-white hover:text-black hover:text-white">
        How we work
       </button>
       </div>
@@ -137,8 +152,8 @@
     </section>
 
     <!--Footer-->
-    <footer class=" relative pt-10 mt-20 pb-20 text-center bg-gray-100 ">
-      <div class="pt-36 md:flex ">
+    <footer class=" relative pt-10 mt-20 pb-20 text-center md:hidden bg-gray-100 ">
+      <div class="pt-36 ">
         <img src="/images/logo.svg" class="block mx-auto " />
         <ul class="flex justify-center my-5 border-b border-gray-400 mx-5 pb-5">
           <li class="mx-3"><img src="/images/icon-facebook.svg" alt=""></li>
@@ -146,39 +161,89 @@
            <li class="mx-3"><img src="/images/icon-pinterest.svg" alt=""></li>
            <li class="mx-3"><img src="/images/icon-instagram.svg" alt=""></li>          
         </ul>
-        <!-- pattern for the footer -->
+        <!-- pattern for the footer for mobile  -->
         <img src="/images/bg-pattern-footer-mobile.svg" alt="" class="absolute top-0 w-full">
       </div>
-      <div>
-        <h3 class="text-gray-400 uppercase font-bold m-10">our company</h3>
-      <a href=""><h3 class="uppercase font-bold m-5">How we work</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">why insure?</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">check price</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">reviews</h3></a>
-      </div>
-      <div>
-        <h3 class="text-gray-400 uppercase font-bold m-10">help me</h3>
-      <a href=""><h3 class="uppercase font-bold m-5">faq</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">terms of use</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">privacy policy</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">cookies</h3></a>
-      </div>
-      <div>
-        <h3 class="text-gray-400 uppercase font-bold m-10">contact</h3>
-      <a href=""><h3 class="uppercase font-bold m-5">sales</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">support</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">live chat</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">reviews</h3></a>
-      </div>
-      <div>
-        <h3 class="text-gray-400 uppercase font-bold m-10">others</h3>
-      <a href=""><h3 class="uppercase font-bold m-5">careers</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">press</h3></a>
-      <a href=""><h3 class="uppercase font-bold m-5">licences</h3></a>
-      </div>
+      <div class=" grid-cols-4 ">
+        <div>
+          <h3 class="text-gray-400 uppercase font-bold m-10">our company</h3>
+        <a href=""><h3 class="uppercase font-bold m-5">How we work</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">why insure?</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">check price</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">reviews</h3></a>
+        </div>
+        <div>
+          <h3 class="text-gray-400 uppercase font-bold m-10">help me</h3>
+        <a href=""><h3 class="uppercase font-bold m-5">faq</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">terms of use</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">privacy policy</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">cookies</h3></a>
+        </div>
+        <div>
+          <h3 class="text-gray-400 uppercase font-bold m-10">contact</h3>
+        <a href=""><h3 class="uppercase font-bold m-5">sales</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">support</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">live chat</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">reviews</h3></a>
+        </div>
+        <div>
+          <h3 class="text-gray-400 uppercase font-bold m-10">others</h3>
+        <a href=""><h3 class="uppercase font-bold m-5">careers</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">press</h3></a>
+        <a href=""><h3 class="uppercase font-bold m-5">licences</h3></a>
+        </div>
+      </div> 
       
       
+    </footer>
+    <!--  -->
+    <footer class="relative hidden md:block p-24 ">
+      <!-- Logo and socio icons -->
+      <div class=" flex items-center mt-0 justify-between border-b border-gray-400">
+        <div >
+          <img src="/images/logo.svg" class="block  " />
+        </div>
+        <!-- socio icons -->
+          <ul class="flex justify-center my-5  mx-5 pb-5">
+            <li class="mx-3"><a href=""><img src="/images/icon-facebook.svg" alt="" class=""></a></li>
+            <li class="mx-3"><a href=""><img src="/images/icon-twitter.svg" alt="" class=""></a></li>
+             <li class="mx-3"><a href=""><img src="/images/icon-pinterest.svg" alt="" class=""></a></li>
+             <li class="mx-3"><img src="/images/icon-instagram.svg" alt="" ></li>          
+          </ul>
+      </div>
+        <!-- pattern for the footer for desktop footer -->
+        <img src="/images/bg-pattern-footer-desktop.svg" alt="" class="absolute top-0 left-0 w-80 ">
+        <!-- End of logo and socio icons -->
       
+      <div class=" -ml-10 p-12 flex  justify-between flex-row ">
+        <div class="flex-col">
+        <h3 class="text-gray-400 uppercase font-bold ">our company</h3>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">How we work</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">why insure?</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">check price</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">reviews</h3></a>
+        </div>
+        <div class="flex-col text-left">
+          <h3 class="text-gray-400 uppercase font-bold ">help me</h3>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">faq</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">terms of use</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">privacy policy</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">cookies</h3></a>
+        </div>
+        <div class="flex-col">
+          <h3 class="text-gray-400 uppercase font-bold ">contact</h3>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">sales</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">support</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">live chat</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">reviews</h3></a>
+        </div>
+        <div class="flex-col">
+          <h3 class="text-gray-400 uppercase font-bold ">others</h3>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">careers</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">press</h3></a>
+        <a href="" class="hover:underline"><h3 class="uppercase font-bold mt-5">licences</h3></a>
+        </div>
+      </div> 
     </footer>
     <script src="/js/script.js"></script>
   </body>
