@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Insure Landing Page</title>
+  </head>
+  <body >
+    <!--Navbar-->
+    <header class=" relative flex items-center justify-between p-5">
+      <div >
+        <img src="/images/logo.svg" alt="Insure--logo "/>
+      </div> 
+         <!-- Desktop Menu -->
+         <nav class="hidden md:flex md:items-center">
+          <ul class="flex items-center justify-between">
+            <li class="p-4"><a href="" class="uppercase hover:font-bold">how we work</a></li>
+            <li class="p-4"><a href="" class="uppercase hover:font-bold">blog</a></li>
+            <li class="p-4"><a href="" class="uppercase hover:font-bold">account</a></li>
+            <li class="p-4"><a href="" class=" pt-2 pb-2 px-3 text-center w-40 uppercase border-2 border-[#000000] hover:bg-darkPurple hover:text-white hover:border-white">
+              view plans</a>
+            </li>
+          </ul>
+         </nav>
+  
+       <!--Mobile Menu-->
+      <nav id="menu" class="MOBILE-MENU hidden md:hidden absolute bg-gray-900  mt-6 top-12 right-0 bottom-0 left-0 h-screen">
+          <ul>
+            <li  class="my-3 text-center"><a href="#" class="text-white">HOW WE WORK</a></li>
+            <li  class="my-3 text-center"><a href="#" class="text-white">BLOG</a></li> 
+            <li  class="my-3 text-center"><a href="#" class="text-white">ACCOUNT</a></li>  
+            <li class="my-3 text-center">
+              <a href="#" class=" pt-2 pb-2 px-3 text-center w-40 text-white uppercase border-2 border-[#ffffff] hover:bg-darkPurple hover:text-white ">
+                 View Plans
+                </a>
+            </li>  
+            <li>
+              <img src="/images/bg-pattern-mobile-nav.svg" class=" absolute w-full  right-0 bottom-10" alt="">
+            </li>             
+          </ul>          
+        </div>
+      </nav>
+      <button class="md:hidden" id="menuBtn">
+        <img src="/images/icon-hamburger.svg" alt="">
+      </button>
+    </header>
+    
+
+    <!--Hero Section-->
+    <section class="hero">
+      <div>
+        <img src="/images/image-intro-mobile.jpg" alt="" class="w-full">
+      </div>
+      <!-- a div to contain the heading and paragraph elements -->
+         <div class="hero-stats relative py-20 px-5 bg-purple">
+          <!-- the pattern image left -->
+          <img src="/images/bg-pattern-intro-left-mobile.svg" alt="" class="absolute top-0 left-0">
+          <h1 class="text-white  font-bold text-5xl text-center"> Humanizing your insurance.</h1>
+          <p class="text-white text-center mt-5 mb-10">Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that’s right for
+            you. Ensure you and your loved ones are protected.</p>
+            <!-- Create a  div to center the button -->
+            <div class="text-center">
+              <button class="p-3 px-6 mb-10 text-white uppercase border-2 border-[#ffffff] hover:bg-darkPurple hover:text-white">
+                View Plans
+              </button>
+            </div>
+            <!-- the pattern image righton the hero -->
+            <img src="/images/bg-pattern-intro-right-mobile.svg" alt="" class="absolute right-0 -bottom-50">
+         </div>
+      
+    </section>
+
+    <!--Features Section-->
+    <section class="container mx-auto grid-items pt-44 pb-20 ">
+      <div class="underline lg:ml-0" ></div>
+      <h2 class="text-3xl text-center font-bold mt-5 mb-10 lg:text-left">We’re different</h2>
+      <div class="cards grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3 ">
+        <div class="card text-center px-10 lg:text-left">
+          <img src="/images/icon-snappy-process.svg" alt="" class="block mx-auto lg:ml-0">
+          <h3 class="font-bold text-lg my-5">Snappy process</h3>
+          <p> Our application process can be completed in minutes, not hours.
+            Don’t get stuck filling in tedious forms.</p>
+        </div>
+        <div class="card  text-center px-10 lg:text-left">
+          <img src="/images/icon-affordable-prices.svg" alt="" class="block mx-auto lg:ml-0">
+          <h3 class="font-bold text-lg my-5">Affordable Prices</h3>
+          <p>  We don’t want you worrying about high monthly costs. Our prices may
+            be low, but we still offer the best coverage possible.</p>
+        </div>
+        <div class="card  text-center px-10 lg:text-left">
+          <img src="/images/icon-people-first.svg" alt="" class="block mx-auto lg:ml-0">
+          <h3 class="font-bold text-lg my-5">People First</h3>
+          <p> Our plans aren’t full of conditions and clauses to prevent payouts.
+            We make sure you’re covered when you need it.</p>
+        </div>
+      </div>
+   
+    </section>
+
+    <!--More-->
+    <section class="py-20 mx-5 lg:hidden">
+      <div
+        class="MORE--SECTION relative mx-auto bg-purple text-center md:justify-between flex mt-8 p-20 flex-col md:flex-row"
+      >
+      <!-- the pattern image righton the hero -->
+      <img src="/images/bg-pattern-how-we-work-mobile.svg" alt="" class="absolute right-0 top-0">
+        <h2
+          class="text-white pb-5 mb-5 ont-serif text-4xl font-bold px-10 "
+        >
+          Find out more about how we work
+        </h2>
+        <div>          
+          <button class="uppercase p-3 px-6 pt-3 text-white bg-purple border-2 border-[#ffffff] hover:bg-darkPurple hover:text-white">
+            How we work
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <!-- section for the desktop -->
+    <section class="container mx-auto py-20  hidden lg:block">
+     <div class="MORE--SECTION relative  bg-purple text-center md:justify-between flex mt-8 p-20 flex-col md:flex-row">
+      <img src="/images/bg-pattern-how-we-work-desktop.svg" alt="" class="absolute right-0 top-0">
+      <div class=" px-10 flex items-center justify-between">
+        <h2
+          class="text-white pb-5 mb-5 ont-serif text-4xl font-bold px-10 w-1/2 "
+        >
+          Find out more about how we work
+        </h2>      
+      <button class="p-2 px-3 mb-10 text-white uppercase border-2 border-[#ffffff] hover:bg-darkPurple hover:text-white">
+       How we work
+      </button>
+      </div>
+     </div>
+    </section>
+
+    <!--Footer-->
+    <footer class=" relative pt-10 mt-20 pb-20 text-center bg-gray-100 ">
+      <div class="pt-36 md:flex ">
+        <img src="/images/logo.svg" class="block mx-auto " />
+        <ul class="flex justify-center my-5 border-b border-gray-400 mx-5 pb-5">
+          <li class="mx-3"><img src="/images/icon-facebook.svg" alt=""></li>
+          <li class="mx-3"><img src="/images/icon-twitter.svg" alt=""></li>
+           <li class="mx-3"><img src="/images/icon-pinterest.svg" alt=""></li>
+           <li class="mx-3"><img src="/images/icon-instagram.svg" alt=""></li>          
+        </ul>
+        <!-- pattern for the footer -->
+        <img src="/images/bg-pattern-footer-mobile.svg" alt="" class="absolute top-0 w-full">
+      </div>
+      <div>
+        <h3 class="text-gray-400 uppercase font-bold m-10">our company</h3>
+      <a href=""><h3 class="uppercase font-bold m-5">How we work</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">why insure?</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">check price</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">reviews</h3></a>
+      </div>
+      <div>
+        <h3 class="text-gray-400 uppercase font-bold m-10">help me</h3>
+      <a href=""><h3 class="uppercase font-bold m-5">faq</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">terms of use</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">privacy policy</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">cookies</h3></a>
+      </div>
+      <div>
+        <h3 class="text-gray-400 uppercase font-bold m-10">contact</h3>
+      <a href=""><h3 class="uppercase font-bold m-5">sales</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">support</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">live chat</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">reviews</h3></a>
+      </div>
+      <div>
+        <h3 class="text-gray-400 uppercase font-bold m-10">others</h3>
+      <a href=""><h3 class="uppercase font-bold m-5">careers</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">press</h3></a>
+      <a href=""><h3 class="uppercase font-bold m-5">licences</h3></a>
+      </div>
+      
+      
+      
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
